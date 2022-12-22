@@ -24,6 +24,8 @@ import { environment } from 'src/environments/environment';
 import { StoreModule } from '@ngrx/store';
 import { appReducers } from './app.reducer';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { OrderPipe } from './pipes/order.pipe';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
     FooterComponent,
     NavbarComponent,
     SidebarComponent,
+    OrderPipe,
   ],
   imports: [
     BrowserModule,
@@ -51,6 +54,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
     AngularFireAnalyticsModule,
     AngularFirestoreModule,
     AngularFireAuthModule,
+    NgChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -3,7 +3,7 @@ import { Usuario } from '../models/usuario.model';
 import { setUser, unsetUser } from './auth.actions';
 
 export interface State {
-  user: Usuario | null;
+  user: Usuario | null | string | any;
 }
 
 export const initialState: State = {
